@@ -11,7 +11,7 @@ type KakaoMapInstance = {
   relayout: () => void;
 };
 
-type GeocoderResult = {
+type GeocoderResultItem = {
   x: string;
   y: string;
 };
@@ -46,7 +46,7 @@ declare global {
           Geocoder: new () => {
             addressSearch: (
               address: string,
-              callback: (result: GeocoderResult[], status: string) => void,
+              callback: (result: GeocoderResultItem[], status: string) => void,
             ) => void;
           };
           Status: {
