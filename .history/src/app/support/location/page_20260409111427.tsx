@@ -1,7 +1,6 @@
 import { Car, Mail, MapPin, Phone, Train } from "lucide-react";
-import Image from "next/image";
-
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import KakaoMap from "@/components/ui/KakaoMap";
 
 export default function LocationPage() {
   return (
@@ -28,11 +27,10 @@ export default function LocationPage() {
             {/* Map Area */}
             <div className="lg:col-span-2">
               <div className="bg-gray-200 rounded-lg h-[480px] relative overflow-hidden shadow-lg">
-                <Image
-                  src="/images/map/map.avif"
-                  alt="에이로보틱스 위치 지도"
-                  fill
-                  className="object-cover"
+                <KakaoMap
+                  address="인천광역시 계양구 서운산단로 2길 5"
+                  companyName="에이로보틱스"
+                  className="w-full h-full"
                 />
               </div>
 

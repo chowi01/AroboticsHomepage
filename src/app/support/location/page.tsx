@@ -1,5 +1,5 @@
 import { Car, Mail, MapPin, Phone, Train } from "lucide-react";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import KakaoMap from "@/components/ui/KakaoMap";
 
 export default function LocationPage() {
