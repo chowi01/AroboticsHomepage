@@ -115,6 +115,8 @@ export function Header() {
                             </div>
                             <div className="text-xs text-gray-600">
                               자율주행 무인지게차
+                              <br />
+                              자율주행 무인대차
                             </div>
                           </Link>
                         </NavigationMenuLink>

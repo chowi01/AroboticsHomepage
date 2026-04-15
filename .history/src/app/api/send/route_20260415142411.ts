@@ -1,3 +1,12 @@
+// import { NextResponse } from "next/server";
+
+// export async function POST() {
+//   return NextResponse.json({
+//     ok: false,
+//     error: "메일 기능이 아직 설정되지 않았습니다.",
+//   });
+// }
+
 import { EmailTemplate } from "@/lib/email";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
@@ -14,7 +23,7 @@ export async function POST(request: Request) {
     email,
     phone,
     company,
-    message
+    message,
   );
 
   try {

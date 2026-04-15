@@ -569,7 +569,7 @@ export default function AMRAgvPage() {
                     </div>
                     <p className="text-sm text-gray-600">
                       전방향 LiDAR 스캔으로 주변 환경을 실시간 모니터링하여
-                      장애물을 즉시 감지합니다.
+                      장애물과 작업자를 즉시 감지합니다.
                     </p>
                   </div>
                 </CardContent>

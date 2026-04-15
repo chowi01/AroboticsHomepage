@@ -23,13 +23,14 @@ export async function POST() {
 //     email,
 //     phone,
 //     company,
-//     message
+//     message,
 //   );
 
 //   try {
 //     const { data, error } = await resend.emails.send({
 //       from: "고객문의 <no-reply@a-robotics.co.kr>",
-//       to: ["ahn@a-robotics.co.kr"],
+//       // to: ["ahn@a-robotics.co.kr"],
+//       to: ["w.i.cho@a-robotics.co.kr"],
 //       subject: `[홈페이지 문의] ${company ? company + " - " : ""}${name}`,
 //       react: EmailTemplate({ name, email, phone, company, message }),
 //     });

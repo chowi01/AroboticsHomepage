@@ -1,4 +1,4 @@
-// import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
 // import Link from "next/link";
 
@@ -237,28 +237,28 @@ const caseStudies = [
     period: "",
     location: "",
     products: ["LiDAR SLAM 방식 무인지게차형 자율운송로봇"],
-    challenge: "신공장대차 이동 및 1 차 건조로 자동화설비 무인지게차 운용",
+    challenge: "친환경 제품 생산 및 건조라인 무인지게차 운용",
     solution:
       "재료가공 → 대차적재 → 건조기입고 → 건조완료 후 버퍼이송 -> 취출이적기 투입 -> 제품출고, 경로 설정/상태 모니터링/자동충전",
     results: [
-      "지게차형 1대 (2.5톤, 3m)",
+      "지게차형 1대 (1.5톤, 3m)",
       "PLC 모드버스 기반 시스템 인터페이스",
     ],
     images: [
       {
-        src: "/images/case_study/reference7_1.png",
-        alt: "무인지게차 좌측면",
-        description: "무인지게차 좌측면",
+        src: "/images/case_study/reference5_1.png",
+        alt: "무인지게차 좌측면 & 이물질받이",
+        description: "무인지게차 좌측면 & 이물질받이",
       },
       {
-        src: "/images/case_study/reference7_2.png",
-        alt: "정면",
-        description: "정면",
+        src: "/images/case_study/reference5_2.png",
+        alt: "이물질받이",
+        description: "이물질받이",
       },
       {
-        src: "/images/case_study/reference7_3.png",
-        alt: "무인지게차 우측면",
-        description: "무인지게차 우측면",
+        src: "/images/case_study/reference5_3.png",
+        alt: "무인지게차 우측면 & 이물질받이",
+        description: "무인지게차 우측면 & 이물질받이",
       },
     ],
     testimonial:

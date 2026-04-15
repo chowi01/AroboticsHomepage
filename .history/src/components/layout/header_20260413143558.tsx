@@ -114,7 +114,7 @@ export function Header() {
                               무인 물류 로봇 (AMR/AGV)
                             </div>
                             <div className="text-xs text-gray-600">
-                              자율주행 무인지게차
+                              자율주행 무인지게차 자율주행 무인대차
                             </div>
                           </Link>
                         </NavigationMenuLink>
@@ -169,9 +169,9 @@ export function Header() {
                             href="/lineup/standard"
                             className="block p-2 hover:bg-gray-50 rounded-md"
                           >
-                            <div className="font-medium">포크형</div>
+                            <div className="font-medium">포크형 AMR</div>
                             <div className="text-xs text-gray-600">
-                              자율주행 포크형 AMR
+                              자율주행 무인지게차
                             </div>
                           </Link>
                         </NavigationMenuLink>
@@ -180,9 +180,9 @@ export function Header() {
                             href="/lineup/low-type"
                             className="block p-2 hover:bg-gray-50 rounded-md"
                           >
-                            <div className="font-medium">저상형</div>
+                            <div className="font-medium">저상형 AMR</div>
                             <div className="text-xs text-gray-600">
-                              Autonomous Mobile Robot
+                              자율주행 무인대차
                             </div>
                           </Link>
                         </NavigationMenuLink>

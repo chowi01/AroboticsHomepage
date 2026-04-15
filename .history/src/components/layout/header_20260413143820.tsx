@@ -1,16 +1,20 @@
 "use client";
 
-import { Menu } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
+import { Menu } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
-    NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink,
-    NavigationMenuList, NavigationMenuTrigger
-} from '@/components/ui/navigation-menu';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -107,10 +111,12 @@ export function Header() {
                             className="block p-2 hover:bg-gray-50 rounded-md"
                           >
                             <div className="font-medium">
-                              무인 운반 로봇 (AMR/AGV)
+                              무인 물류 로봇 (AMR/AGV)
                             </div>
                             <div className="text-xs text-gray-600">
                               자율주행 무인지게차
+                              <br />
+                              자율주행 무인대차
                             </div>
                           </Link>
                         </NavigationMenuLink>
@@ -133,7 +139,7 @@ export function Header() {
                             href="/products/development-records"
                             className="block p-2 hover:bg-gray-50 rounded-md"
                           >
-                            <div className="font-medium">개발및납품실적</div>
+                            <div className="font-medium">개발 및 납품실적</div>
                             <div className="text-xs text-gray-600">
                               개발 기술 및 납품 실적
                             </div>
@@ -165,9 +171,9 @@ export function Header() {
                             href="/lineup/standard"
                             className="block p-2 hover:bg-gray-50 rounded-md"
                           >
-                            <div className="font-medium">포크형</div>
+                            <div className="font-medium">포크형 AMR</div>
                             <div className="text-xs text-gray-600">
-                              자율주행 포크형 AMR
+                              자율주행 무인지게차
                             </div>
                           </Link>
                         </NavigationMenuLink>
@@ -176,9 +182,9 @@ export function Header() {
                             href="/lineup/low-type"
                             className="block p-2 hover:bg-gray-50 rounded-md"
                           >
-                            <div className="font-medium">저상형</div>
+                            <div className="font-medium">저상형 AMR</div>
                             <div className="text-xs text-gray-600">
-                              Autonomous Mobile Robot
+                              자율주행 무인대차
                             </div>
                           </Link>
                         </NavigationMenuLink>

@@ -2,7 +2,7 @@
 
 import { Play, X } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -57,27 +57,10 @@ export function VideoGallerySection() {
     null,
   );
 
-  useEffect(() => {
-    const handleEscKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setSelectedVideo(null);
-      }
-    };
-
-    if (selectedVideo) {
-      window.addEventListener("keydown", handleEscKey);
-      document.body.style.overflow = "hidden";
-    }
-
-    return () => {
-      window.removeEventListener("keydown", handleEscKey);
-      document.body.style.overflow = "";
-    };
-  }, [selectedVideo]);
-
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-classic">
+        {/* Section Header */}
         <div className="section-header-classic">
           <h2 className="section-title-classic">AMR 동영상 갤러리</h2>
           <p className="section-subtitle-classic">
@@ -85,43 +68,43 @@ export function VideoGallerySection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* Video Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video) => (
             <Card
               key={video.id}
-              className="overflow-hidden transition-shadow duration-300 hover:shadow-lg"
+              className="cursor-pointer hover:shadow-lg transition-shadow duration-300"
+              onClick={() => setSelectedVideo(video)}
             >
               <CardContent className="p-0">
-                <button
-                  type="button"
-                  onClick={() => setSelectedVideo(video)}
-                  className="group relative block w-full text-left"
-                  aria-label={`${video.title} 영상 재생`}
-                >
-                  <div className="relative aspect-video bg-gray-200">
+                <div className="relative aspect-video bg-gray-200">
+                  {video.thumbnail.endsWith(".pdf") ? (
+                    <iframe
+                      src={video.thumbnail}
+                      className="absolute inset-0 w-full h-full"
+                      title={video.title}
+                    />
+                  ) : (
                     <Image
                       src={video.thumbnail}
                       alt={video.title}
                       fill
                       className="object-cover"
                     />
-
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-xl">
-                        <Play className="ml-1 h-8 w-8 text-gray-900" />
-                      </div>
-                    </div>
-
-                    <div className="absolute left-4 top-4">
-                      <span className="rounded bg-gray-900 px-3 py-1 text-xs font-medium text-white">
-                        {video.category}
-                      </span>
+                  )}
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                      <Play className="h-8 w-8 text-gray-900 ml-1" />
                     </div>
                   </div>
-                </button>
-
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3 py-1 bg-gray-900 text-white text-xs font-medium rounded">
+                      {video.category}
+                    </span>
+                  </div>
+                </div>
                 <div className="p-4">
-                  <h3 className="mb-1 font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 mb-1">
                     {video.title}
                   </h3>
                   <p className="text-sm text-gray-600">{video.description}</p>
@@ -131,45 +114,36 @@ export function VideoGallerySection() {
           ))}
         </div>
 
+        {/* Video Modal */}
         {selectedVideo && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedVideo(null)}
           >
             <div
-              className="relative w-full max-w-5xl"
+              className="relative max-w-5xl w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative overflow-hidden rounded-xl border-4 border-white bg-black shadow-2xl">
-                {/* 팝업 안쪽 닫기 버튼 */}
-                <button
-                  type="button"
-                  onClick={() => setSelectedVideo(null)}
-                  className="absolute right-4 top-4 z-20 flex h-11 w-11 items-center justify-center rounded-full border-2 border-white bg-black/80 text-white shadow-xl transition-all duration-200 hover:scale-110 hover:bg-white hover:text-black"
-                  aria-label="팝업 닫기"
-                >
-                  <X className="h-6 w-6" />
-                </button>
-
-                <div className="aspect-video bg-black">
+              <button
+                onClick={() => setSelectedVideo(null)}
+                className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+              >
+                <X className="h-8 w-8" />
+              </button>
+              <div className="bg-black rounded-lg overflow-hidden">
+                <div className="aspect-video">
                   <video
-                    key={selectedVideo.video}
                     src={selectedVideo.video}
                     controls
                     autoPlay
-                    playsInline
-                    className="h-full w-full"
+                    className="w-full h-full"
                   />
                 </div>
-
-                <div className="border-t border-white/20 bg-gray-900 p-6 text-white">
-                  <h3 className="mb-2 pr-12 text-xl font-semibold">
+                <div className="p-6 bg-gray-900 text-white">
+                  <h3 className="text-xl font-semibold mb-2">
                     {selectedVideo.title}
                   </h3>
                   <p className="text-gray-300">{selectedVideo.description}</p>
-                  <p className="mt-3 text-sm text-gray-400">
-                    ESC 키 또는 우측 상단 닫기 버튼으로 팝업을 닫을 수 있습니다.
-                  </p>
                 </div>
               </div>
             </div>

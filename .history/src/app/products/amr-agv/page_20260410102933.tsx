@@ -280,20 +280,27 @@ export default function AMRAgvPage() {
                             key={num}
                             className="overflow-hidden hover:shadow-lg transition-shadow bg-black"
                           >
-                            <div className="aspect-video relative">
+                            <div
+                              className="aspect-video relative cursor-pointer"
+                              onClick={() =>
+                                window.open(
+                                  `/images/acs/ACS_${num}.png`,
+                                  "_blank",
+                                )
+                              }
+                            >
                               <Image
                                 src={`/images/acs/ACS_${num}.png`}
                                 alt={`ACS 시스템 화면 ${num}`}
                                 fill
                                 sizes="(max-width: 768px) 50vw, 33vw"
-                                className="object-cover"
+                                className="object-cover hover:scale-105 transition-transform"
                               />
                             </div>
                           </Card>
                         ))}
                       </div>
                     </div>
-
                     {/* 키오스크 이미지 갤러리 */}
                     <div className="space-y-6 pt-10">
                       <div className="text-center">
@@ -302,18 +309,26 @@ export default function AMRAgvPage() {
                       </div>
 
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        {[3, 5].map((num) => (
+                        {[1, 2, 3, 4, 5].map((num) => (
                           <Card
                             key={num}
                             className="overflow-hidden hover:shadow-lg transition-shadow bg-black"
                           >
-                            <div className="aspect-video relative">
+                            <div
+                              className="aspect-video relative cursor-pointer"
+                              onClick={() =>
+                                window.open(
+                                  `/images/kiosk/kiosk_${num}.jpg`,
+                                  "_blank",
+                                )
+                              }
+                            >
                               <Image
                                 src={`/images/kiosk/kiosk_${num}.jpg`}
                                 alt={`키오스크 화면 ${num}`}
                                 fill
                                 sizes="(max-width: 768px) 50vw, 33vw"
-                                className="object-cover"
+                                className="object-cover hover:scale-105 transition-transform"
                               />
                             </div>
                           </Card>
@@ -569,7 +584,7 @@ export default function AMRAgvPage() {
                     </div>
                     <p className="text-sm text-gray-600">
                       전방향 LiDAR 스캔으로 주변 환경을 실시간 모니터링하여
-                      장애물을 즉시 감지합니다.
+                      장애물과 작업자를 즉시 감지합니다.
                     </p>
                   </div>
                 </CardContent>
