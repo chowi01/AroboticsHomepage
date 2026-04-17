@@ -38,8 +38,7 @@ export async function POST(request: Request) {
     );
 
     const { data, error } = await resend.emails.send({
-      from: "고객문의 <no-reply@a-robotics.co.kr>",
-      // from: "고객문의 <no-reply@send.a-robotics.co.kr>",
+      from: "고객문의 <no-reply@send.a-robotics.co.kr>",
       // to: ["chowi01@naver.com"], // 테스트 완료 후 실제 수신 주소로 변경
       to: ["info@a-robotics.co.kr"],
       replyTo: email,
