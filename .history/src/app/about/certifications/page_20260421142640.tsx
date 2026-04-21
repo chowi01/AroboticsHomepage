@@ -43,10 +43,10 @@ const patents = [
   },
 ];
 
-// function getFileName(fileUrl: string) {
-//   const fileName = fileUrl.split("/").pop() || "";
-//   return decodeURIComponent(fileName).replace(/\.pdf$/i, "");
-// }
+function getFileName(fileUrl: string) {
+  const fileName = fileUrl.split("/").pop() || "";
+  return decodeURIComponent(fileName).replace(/\.pdf$/i, "");
+}
 
 export default function CertificationsPage() {
   return (

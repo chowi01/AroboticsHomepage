@@ -6,7 +6,7 @@ import {
   BookOpen,
   CheckCircle,
   ChevronRight,
-  ClipboardList,
+  // ClipboardList,
   Clock,
   Forklift,
   MapPin,
@@ -46,8 +46,8 @@ export default function AMRAgvPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-5xl font-bold leading-tight">
-                스마트공장
-                <br /> 및<br /> 자동화창고를 위한 <br />
+                스마트공장,자동화창고를 위한
+                <br />
                 <span className="text-gray-500">자율주행 무인지게차</span>
               </h1>
               <p className="text-xl text-gray-300">
@@ -241,7 +241,7 @@ export default function AMRAgvPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">시스템 구성</h2>
             <p className="text-xl text-gray-600">
-              상위 시스템과의 완벽한 연동으로 효율적인 물류 운영을 실현합니다
+              상위 시스템과의 완벽한 연동으로 효율적인 물류 운영을 실현
             </p>
           </div>
 
@@ -280,21 +280,40 @@ export default function AMRAgvPage() {
                             key={num}
                             className="overflow-hidden hover:shadow-lg transition-shadow bg-black"
                           >
-                            <div
-                              className="aspect-video relative cursor-pointer"
-                              onClick={() =>
-                                window.open(
-                                  `/images/acs/ACS_${num}.png`,
-                                  "_blank",
-                                )
-                              }
-                            >
+                            <div className="aspect-video relative">
                               <Image
                                 src={`/images/acs/ACS_${num}.png`}
                                 alt={`ACS 시스템 화면 ${num}`}
                                 fill
                                 sizes="(max-width: 768px) 50vw, 33vw"
-                                className="object-cover hover:scale-105 transition-transform"
+                                className="object-cover"
+                              />
+                            </div>
+                          </Card>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* 키오스크 이미지 갤러리 */}
+                    <div className="space-y-6 pt-10">
+                      <div className="text-center">
+                        <h3 className="text-2xl font-bold">키오스크</h3>
+                        <p className="text-gray-600 mt-2">키오스크 화면 예시</p>
+                      </div>
+
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        {[3, 5].map((num) => (
+                          <Card
+                            key={num}
+                            className="overflow-hidden hover:shadow-lg transition-shadow bg-black"
+                          >
+                            <div className="aspect-video relative">
+                              <Image
+                                src={`/images/kiosk/kiosk_${num}.jpg`}
+                                alt={`키오스크 화면 ${num}`}
+                                fill
+                                sizes="(max-width: 768px) 50vw, 33vw"
+                                className="object-cover"
                               />
                             </div>
                           </Card>
@@ -505,226 +524,13 @@ export default function AMRAgvPage() {
         </div>
       </section>
 
-      {/* Key Components */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">주요 구성품</h2>
-            <p className="text-xl text-gray-600">
-              무인지게차의 핵심 구성품과 각 부품별 기능을 확인하세요
-            </p>
-          </div>
-
-          <div className="max-w-6xl mx-auto">
-            <div className="relative mb-12">
-              <Image
-                src="/images/amr_avg/key_components.png"
-                alt="무인지게차 주요 구성품"
-                width={1200}
-                height={600}
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* 포크형 AMR 구성품 */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">포크형 AMR 구성품</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">항법/SLAM 용 LiDAR</h4>
-                        <p className="text-sm text-gray-600">
-                          정확한 위치 인식 및 자율주행
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">주행/경고 표시등</h4>
-                        <p className="text-sm text-gray-600">
-                          작업 상태 및 방향 표시
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">마스트 및 포크</h4>
-                        <p className="text-sm text-gray-600">
-                          화물 적재 및 리프팅
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">비상정지 버튼</h4>
-                        <p className="text-sm text-gray-600">
-                          즉시 작업 중단 시 사용
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">포크탑 센서 (좌/우)</h4>
-                        <p className="text-sm text-gray-600">포크 전방 감지</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">안전 센서 (전방)</h4>
-                        <p className="text-sm text-gray-600">
-                          전방 장애물 감지
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">
-                          충격감지 비상 멈춤 범퍼
-                        </h4>
-                        <p className="text-sm text-gray-600">
-                          충돌 시 즉시 정지
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* 하이브리드 AMR 구성품 */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-xl">
-                    하이브리드 AMR 구성품
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">주제어 장치 박스</h4>
-                        <p className="text-sm text-gray-600">
-                          전체 시스템 제어
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">주행/경고 표시등</h4>
-                        <p className="text-sm text-gray-600">
-                          작업 상태 및 방향 표시
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">유/무인 전환 스위치</h4>
-                        <p className="text-sm text-gray-600">
-                          수동/자동 모드 전환
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">후방 안전 센서 (옵션)</h4>
-                        <p className="text-sm text-gray-600">
-                          후방 장애물 감지 및 경고
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">비상정지 버튼</h4>
-                        <p className="text-sm text-gray-600">
-                          즉시 작업 중단 시 사용
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">배터리 자동충전 포트</h4>
-                        <p className="text-sm text-gray-600">
-                          무인 자동 충전 시스템
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <h4 className="font-semibold">구동/조향 바퀴 (하부)</h4>
-                        <p className="text-sm text-gray-600">
-                          차량 이동 및 방향 제어
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-12 text-center">
-              <Card className="bg-gray-50 border-gray-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-3">핵심 기술 특징</h3>
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Shield className="h-8 w-8 text-gray-600" />
-                      </div>
-                      <h4 className="font-semibold mb-1">다중 안전 시스템</h4>
-                      <p className="text-sm text-gray-600">
-                        LiDAR, 충돌 센서, 비상정지 버튼으로 완벽한 안전 보장
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Settings className="h-8 w-8 text-gray-600" />
-                      </div>
-                      <h4 className="font-semibold mb-1">하이브리드 제어</h4>
-                      <p className="text-sm text-gray-600">
-                        유인/무인 전환 가능한 유연한 운영 시스템
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Battery className="h-8 w-8 text-gray-600" />
-                      </div>
-                      <h4 className="font-semibold mb-1">자동 충전</h4>
-                      <p className="text-sm text-gray-600">
-                        무인 자동 충전으로 24시간 연속 운영 가능
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Safety Zones */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">안전 구역 및 속도 제어</h2>
             <p className="text-xl text-gray-600">
-              360도 SLAM 감지와 다층 안전 구역으로 완벽한 작업 안전을 보장합니다
+              360도 SLAM 감지와 다층 안전 구역으로 완벽한 작업 안전을 보장
             </p>
           </div>
 
@@ -763,7 +569,7 @@ export default function AMRAgvPage() {
                     </div>
                     <p className="text-sm text-gray-600">
                       전방향 LiDAR 스캔으로 주변 환경을 실시간 모니터링하여
-                      장애물과 작업자를 즉시 감지합니다.
+                      장애물을 즉시 감지
                     </p>
                   </div>
                 </CardContent>
@@ -1066,6 +872,7 @@ export default function AMRAgvPage() {
       </section>
 
       {/* CTA Section */}
+      {/*
       <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4">문의하기</h2>
@@ -1092,6 +899,7 @@ export default function AMRAgvPage() {
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 }

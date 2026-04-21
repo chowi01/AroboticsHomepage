@@ -1,9 +1,9 @@
-import { Calendar, MapPin } from "lucide-react";
+// import { Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -16,7 +16,7 @@ const caseStudies = [
   {
     id: 1,
     title: "자율주행무인대차 및 운용시스템 납품",
-    company: "㈜ 고려강선",
+    company: "K사",
     industry: "제조업",
     period: "2022.12.01 ~ 2023.02.28",
     location: "경북 포항시",
@@ -24,26 +24,22 @@ const caseStudies = [
     challenge: "만보빈 공급 및 공보빈 회수 / 공급라인 무인대차 운용",
     solution:
       "출고라인 및 MES 연동하여 픽업 오더 수령, 주행 위치 구간별 속도 조정, AMR 경로 설정 화면 구성, 무인대차 이동 경로/상태/적재 장소 모니터링, 수동 경로 할당 기능, 배터리 모니터링 및 자동충전, 보빈 이/적재 영역 관제단 맵 구성",
-    results: [
-      "경북 포항 소재 고려강선 공장",
-      "초기 2대, 확장 11대 (저상형 AMR) 운영",
-      "현업 적용 및 주변 라인 확대 예정",
-    ],
+    results: ["초기 2대, 확장 11대 (저상형 AMR) 운영"],
     images: [
       {
         src: "/images/case_study/reference1_1.png",
         alt: "소선 이송용 자율주행 이송로봇(AMR)",
-        description: "소선 이송용 자율주행 이송로봇(AMR)",
+        description: "저상형 자율주행 AMR",
       },
       {
         src: "/images/case_study/reference1_2.png",
         alt: "공보빈 이송용 자율주행 이송로봇(AMR)",
-        description: "공보빈 이송용 자율주행 이송로봇(AMR)",
+        description: "저상형 자율주행 AMR",
       },
       {
         src: "/images/case_study/reference1_3.png",
         alt: "소선 이송용 로봇+ 공보빈 이송용 로봇",
-        description: "소선 이송용 로봇+ 공보빈 이송용 로봇",
+        description: "저상형 자율주행 AMR",
       },
     ],
     testimonial:
@@ -63,7 +59,7 @@ const caseStudies = [
       "원자재 입고 → 금형가공기계, 완성품 출고 → 외부 출고라인, 주행 위치별 속도 제어, 지게차 경로 설정 및 상태 모니터링, 수동 경로 할당 및 배터리 자동충전",
     results: [
       "평택 LG전자 생산기술연구원 금형 공장",
-      "1대 (1.5톤, 인상높이 6m) 운영",
+      "1대 (1.5톤, 인상높이 3m) 운영",
     ],
     images: [
       {
@@ -78,8 +74,8 @@ const caseStudies = [
       },
       {
         src: "/images/case_study/reference2_3.png",
-        alt: "자율주행 이송로봇(AMR) 우측면",
-        description: "자율주행 이송로봇(AMR) 우측면",
+        alt: "자율주행 이송로봇(AMR) 우측",
+        description: "자율주행 이송로봇(AMR) 우측",
       },
     ],
     testimonial:
@@ -126,7 +122,7 @@ const caseStudies = [
   {
     id: 4,
     title: "자율주행무인지게차 운용시스템 납품",
-    company: "㈜ LG전자 - ㈜ 화신",
+    company: "㈜ LG전자",
     industry: "전자부품 제조",
     period: "2024.05.20",
     location: "경북 영천",
@@ -134,11 +130,7 @@ const caseStudies = [
     challenge: "전기자동차 부품 생산라인 무인지게차 운용",
     solution:
       "반제품 공급 및 빈 대차 회수, 창고 → 작업라인 셔틀 방식 운송, 경로 설정/상태 모니터링/자동충전, 팔레트 이/적재 영역 구성",
-    results: [
-      "경북 영천 화신 공장",
-      "지게차형 2대 (2톤, 2m)",
-      "PLC 기반 시스템 인터페이스",
-    ],
+    results: ["지게차형 2대 (2톤, 2m)", "PLC 기반 시스템 인터페이스"],
     images: [
       {
         src: "/images/case_study/reference4_1.png",
@@ -163,7 +155,7 @@ const caseStudies = [
   {
     id: 5,
     title: "자율주행무인지게차 운용시스템 납품",
-    company: "㈜ L사",
+    company: "L사",
     industry: "제조업",
     period: "2024.06.19",
     location: "경기도 안양",
@@ -171,11 +163,7 @@ const caseStudies = [
     challenge: "3D 프린트라인 무인지게차 운용",
     solution:
       "공 플랫폼 → 프린트 → 세척 → 스태커로 단계별 이송, 경로 설정/상태 모니터링/자동충전, 이물질받이(Drip Pan) 장착",
-    results: [
-      "경기도 안양 L사 공장",
-      "지게차형 1대 (1.5톤, 3m)",
-      "OPC UA 기반 시스템 인터페이스",
-    ],
+    results: ["지게차형 1대 (1.5톤, 3m)", "OPC UA 기반 시스템 인터페이스"],
     images: [
       {
         src: "/images/case_study/reference5_1.png",
@@ -197,6 +185,78 @@ const caseStudies = [
       "3D 프린트 라인에 최적화된 AMR 시스템을 구축해 주셔서 작업 효율성이 크게 향상되었습니다.",
     testimonialAuthor: "L사 생산팀장",
   },
+  {
+    id: 6,
+    title: "자율주행무인지게차 운용시스템 납품",
+    company: "풍산",
+    industry: "",
+    period: "",
+    location: "",
+    products: ["LiDAR SLAM 방식 무인지게차형 자율운송로봇"],
+    challenge: "스포츠탄생산 출고 라인에 무인지게차 운용",
+    solution:
+      "공 빨레트 → 생산라인 → 출고라인 → 랙에 적재 및 보관, 경로 설정/상태 모니터링/자동충전",
+    results: [
+      "지게차형 2대 (2.5톤, 3m)",
+      "PLC 모드버스 기반 시스템 인터페이스",
+    ],
+    images: [
+      {
+        src: "/images/case_study/reference6_1.png",
+        alt: "무인지게차 좌측면",
+        description: "무인지게차 좌측면",
+      },
+      {
+        src: "/images/case_study/reference6_2.png",
+        alt: "정면",
+        description: "정면",
+      },
+      {
+        src: "/images/case_study/reference6_3.png",
+        alt: "무인지게차 우측면",
+        description: "무인지게차 우측면",
+      },
+    ],
+    testimonial:
+      "3D 프린트 라인에 최적화된 AMR 시스템을 구축해 주셔서 작업 효율성이 크게 향상되었습니다.",
+    testimonialAuthor: "L사 생산팀장",
+  },
+  {
+    id: 7,
+    title: "자율주행무인지게차 운용시스템 납품",
+    company: "N사",
+    industry: "",
+    period: "",
+    location: "",
+    products: ["LiDAR SLAM 방식 무인지게차형 자율운송로봇"],
+    challenge: "신공장대차 이동 및 1 차 건조로 자동화설비 무인지게차 운용",
+    solution:
+      "재료가공 → 대차적재 → 건조기입고 → 건조완료 후 버퍼이송 -> 취출이적기 투입 -> 제품출고, 경로 설정/상태 모니터링/자동충전",
+    results: [
+      "지게차형 1대 (2.5톤, 3m)",
+      "PLC 모드버스 기반 시스템 인터페이스",
+    ],
+    images: [
+      {
+        src: "/images/case_study/reference7_1.png",
+        alt: "무인지게차 좌측면",
+        description: "무인지게차 좌측면",
+      },
+      {
+        src: "/images/case_study/reference7_2.png",
+        alt: "정면",
+        description: "정면",
+      },
+      {
+        src: "/images/case_study/reference7_3.png",
+        alt: "무인지게차 우측면",
+        description: "무인지게차 우측면",
+      },
+    ],
+    testimonial:
+      "3D 프린트 라인에 최적화된 AMR 시스템을 구축해 주셔서 작업 효율성이 크게 향상되었습니다.",
+    testimonialAuthor: "L사 생산팀장",
+  },
 ];
 
 export default function CaseStudiesPage() {
@@ -205,8 +265,8 @@ export default function CaseStudiesPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 mt-16 py-16">
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="relative z-10 flex items-center h-full">
-          <div className="container-classic">
+        <div className="relative z-10">
+          <div className="container-classic text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               주요 적용사례
             </h1>
@@ -222,116 +282,117 @@ export default function CaseStudiesPage() {
         <div className="container-classic">
           <div className="max-w-7xl mx-auto">
             <div className="space-y-16">
-              {caseStudies.map((study) => (
-                <Card key={study.id} className="overflow-hidden">
-                  <CardHeader className="bg-gradient-to-r from-gray-50 to-gray-100">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between py-4">
-                      <div>
-                        <CardTitle className="text-2xl text-gray-900 mb-2">
-                          {study.title}
-                        </CardTitle>
-                        <CardDescription className="text-lg">
-                          {study.company} · {study.industry}
-                        </CardDescription>
-                      </div>
-                      <div className="flex items-center mt-4 md:mt-0">
-                        <Badge variant="secondary" className="mr-2">
-                          <Calendar className="h-4 w-4 mr-1" />
-                          {study.period}
-                        </Badge>
-                        <Badge variant="outline">
-                          <MapPin className="h-4 w-4 mr-1" />
-                          {study.location}
-                        </Badge>
-                      </div>
-                    </div>
-                  </CardHeader>
-
-                  <CardContent className="p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                      {/* Left Column - Project Info */}
-                      <div>
-                        <div className="mb-6">
-                          <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                            도입 제품
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {study.products.map((product, idx) => (
-                              <Badge key={idx} variant="secondary">
-                                {product}
-                              </Badge>
-                            ))}
-                          </div>
+              {[...caseStudies]
+                .sort((a, b) => b.id - a.id)
+                .map((study) => (
+                  <Card key={study.id} className="overflow-hidden">
+                    <CardHeader className="bg-gradient-to-r from-gray-50 to-gray-100">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between py-4">
+                        <div>
+                          <CardTitle className="text-2xl text-gray-900 mb-2">
+                            {study.title}
+                          </CardTitle>
+                          <CardDescription className="text-lg">
+                            {/* {study.company} · {study.industry} */}
+                            {study.company}
+                          </CardDescription>
                         </div>
-
-                        <div className="mb-6">
-                          <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                            도전 과제
-                          </h4>
-                          <p className="text-gray-700">{study.challenge}</p>
-                        </div>
-
-                        <div className="mb-6">
-                          <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                            구현 내용
-                          </h4>
-                          <p className="text-gray-700">{study.solution}</p>
+                        <div className="flex items-center mt-4 md:mt-0">
+                          <Badge variant="secondary" className="mr-2">
+                            {/* <Calendar className="h-4 w-4 mr-1" />
+                            {study.period} */}
+                          </Badge>
+                          <Badge variant="outline">
+                            {/* <MapPin className="h-4 w-4 mr-1" />
+                            {study.location} */}
+                          </Badge>
                         </div>
                       </div>
+                    </CardHeader>
 
-                      {/* Right Column - Results */}
-                      <div>
-                        <div className="mb-6">
-                          <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                            현장 적용
-                          </h4>
-                          <div className="space-y-3">
-                            {study.results.map((result, idx) => (
-                              <div key={idx} className="flex items-center">
-                                <div className="w-2 h-2 bg-gray-600 rounded-full mr-3"></div>
-                                <span className="text-gray-700">{result}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* Images Section */}
-                        {study.images && (
+                    <CardContent className="p-8">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
                           <div className="mb-6">
                             <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                              현장 사진
+                              도입 제품
                             </h4>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                              {study.images.map((image, idx) => (
-                                <div key={idx} className="relative group">
-                                  <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden">
-                                    <Image
-                                      src={image.src}
-                                      alt={image.alt}
-                                      fill
-                                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                                    />
-                                  </div>
-                                  <p className="text-sm text-gray-600 mt-2 text-center">
-                                    {image.description}
-                                  </p>
+                            <div className="flex flex-wrap gap-2">
+                              {study.products.map((product, idx) => (
+                                <Badge key={idx} variant="secondary">
+                                  {product}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div className="mb-6">
+                            <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                              도전 과제
+                            </h4>
+                            <p className="text-gray-700">{study.challenge}</p>
+                          </div>
+
+                          <div className="mb-6">
+                            <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                              구현 내용
+                            </h4>
+                            <p className="text-gray-700">{study.solution}</p>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div className="mb-6">
+                            <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                              현장 적용
+                            </h4>
+                            <div className="space-y-3">
+                              {study.results.map((result, idx) => (
+                                <div key={idx} className="flex items-center">
+                                  <div className="w-2 h-2 bg-gray-600 rounded-full mr-3"></div>
+                                  <span className="text-gray-700">
+                                    {result}
+                                  </span>
                                 </div>
                               ))}
                             </div>
                           </div>
-                        )}
+
+                          {study.images && (
+                            <div className="mb-6">
+                              <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                                현장 사진
+                              </h4>
+                              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                {study.images.map((image, idx) => (
+                                  <div key={idx} className="relative group">
+                                    <div className="relative h-48 bg-gray-100 rounded-lg overflow-hidden">
+                                      <Image
+                                        src={image.src}
+                                        alt={image.alt}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                      />
+                                    </div>
+                                    <p className="text-sm text-gray-600 mt-2 text-center">
+                                      {image.description}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))}
             </div>
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
-      <section className="section-padding bg-white">
+      {/* <section className="section-padding bg-white">
         <div className="container-classic">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg p-8 shadow-md">
@@ -353,7 +414,7 @@ export default function CaseStudiesPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

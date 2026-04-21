@@ -16,7 +16,7 @@ const caseStudies = [
   {
     id: 1,
     title: "자율주행무인대차 및 운용시스템 납품",
-    company: "K사",
+    company: "㈜ 고려강선",
     industry: "제조업",
     period: "2022.12.01 ~ 2023.02.28",
     location: "경북 포항시",
@@ -24,22 +24,26 @@ const caseStudies = [
     challenge: "만보빈 공급 및 공보빈 회수 / 공급라인 무인대차 운용",
     solution:
       "출고라인 및 MES 연동하여 픽업 오더 수령, 주행 위치 구간별 속도 조정, AMR 경로 설정 화면 구성, 무인대차 이동 경로/상태/적재 장소 모니터링, 수동 경로 할당 기능, 배터리 모니터링 및 자동충전, 보빈 이/적재 영역 관제단 맵 구성",
-    results: ["초기 2대, 확장 11대 (저상형 AMR) 운영"],
+    results: [
+      "경북 포항 소재 고려강선 공장",
+      "초기 2대, 확장 11대 (저상형 AMR) 운영",
+      "현업 적용 및 주변 라인 확대 예정",
+    ],
     images: [
       {
         src: "/images/case_study/reference1_1.png",
         alt: "소선 이송용 자율주행 이송로봇(AMR)",
-        description: "저상형 자율주행 AMR",
+        description: "소선 이송용 자율주행 이송로봇(AMR)",
       },
       {
         src: "/images/case_study/reference1_2.png",
         alt: "공보빈 이송용 자율주행 이송로봇(AMR)",
-        description: "저상형 자율주행 AMR",
+        description: "공보빈 이송용 자율주행 이송로봇(AMR)",
       },
       {
         src: "/images/case_study/reference1_3.png",
         alt: "소선 이송용 로봇+ 공보빈 이송용 로봇",
-        description: "저상형 자율주행 AMR",
+        description: "소선 이송용 로봇+ 공보빈 이송용 로봇",
       },
     ],
     testimonial:

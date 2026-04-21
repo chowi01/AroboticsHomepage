@@ -46,8 +46,8 @@ export default function AMRAgvPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-5xl font-bold leading-tight">
-                스마트공장
-                <br /> 및<br /> 자동화창고를 위한 <br />
+                스마트공장,자동화창고를 위한
+                <br />
                 <span className="text-gray-500">자율주행 무인지게차</span>
               </h1>
               <p className="text-xl text-gray-300">
@@ -109,8 +109,8 @@ export default function AMRAgvPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">자율주행 무인지게차란?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              관제단에서 주어지는 작업지시를 자동으로, 시간제한 없이 연속적으로
-              수행할 수 있는 차세대 지게차입니다
+              관제단에서 주어지는 작업지시를 연속적으로 수행할 수 있는 차세대
+              지게차
             </p>
           </div>
 
@@ -241,7 +241,7 @@ export default function AMRAgvPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">시스템 구성</h2>
             <p className="text-xl text-gray-600">
-              상위 시스템과의 완벽한 연동으로 효율적인 물류 운영을 실현합니다
+              상위 시스템과의 완벽한 연동으로 효율적인 물류 운영을 실현
             </p>
           </div>
 
@@ -370,8 +370,8 @@ export default function AMRAgvPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-bold text-gray-600">
-                  최소 100 kg
-                  <br />
+                  {/* 최소 100 kg
+                  <br /> */}
                   최대 3,500 kg
                 </p>
               </CardContent>
@@ -530,7 +530,7 @@ export default function AMRAgvPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">안전 구역 및 속도 제어</h2>
             <p className="text-xl text-gray-600">
-              360도 SLAM 감지와 다층 안전 구역으로 완벽한 작업 안전을 보장합니다
+              360도 SLAM 감지와 다층 안전 구역으로 완벽한 작업 안전을 보장
             </p>
           </div>
 
@@ -569,7 +569,7 @@ export default function AMRAgvPage() {
                     </div>
                     <p className="text-sm text-gray-600">
                       전방향 LiDAR 스캔으로 주변 환경을 실시간 모니터링하여
-                      장애물을 즉시 감지합니다.
+                      장애물을 즉시 감지
                     </p>
                   </div>
                 </CardContent>
