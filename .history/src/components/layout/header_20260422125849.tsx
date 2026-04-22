@@ -31,10 +31,12 @@ export function Header() {
                 <Image
                   src="/logo.png"
                   alt="A-ROBOTICS"
-                  width={27}
-                  height={27}
+                  // width={27}
+                  // height={27}
+                  width={37}
+                  height={37}
                 />
-                <span className="text-xl font-bold text-gray-900">
+                <span className="text-2xl font-bold text-gray-900">
                   에이로보틱스
                 </span>
               </Link>
@@ -115,6 +117,8 @@ export function Header() {
                             </div>
                             <div className="text-xs text-gray-600">
                               자율주행 무인지게차
+                              <br />
+                              자율주행 무인대차
                             </div>
                           </Link>
                         </NavigationMenuLink>

@@ -27,7 +27,7 @@ export function Header() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <Link href="/" className="flex items-center space-x-4">
+              <Link href="/" className="flex items-center space-x-2">
                 <Image
                   src="/logo.png"
                   alt="A-ROBOTICS"
@@ -36,7 +36,7 @@ export function Header() {
                   width={37}
                   height={37}
                 />
-                <span className="text-4xl font-bold text-gray-900">
+                <span className="text-xl font-bold text-gray-900">
                   에이로보틱스
                 </span>
               </Link>

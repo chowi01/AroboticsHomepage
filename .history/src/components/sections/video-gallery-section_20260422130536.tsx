@@ -123,10 +123,7 @@ export function VideoGallerySection() {
                 </button>
 
                 <div className="p-4">
-                  {/* <h3 className="mb-1 font-semibold text-gray-900">
-                    {video.title}
-                  </h3> */}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="mb-1 font-semibold text-gray-900">
                     {video.title}
                   </h3>
                   <p className="text-sm text-gray-600">{video.description}</p>

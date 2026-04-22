@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const solutions = [
@@ -69,18 +69,18 @@ export function SolutionsSection() {
                 ))}
               </div>
 
-              <Button
+              {/* <Button
                 asChild
                 className="bg-gray-900 text-white px-8 py-4 h-auto font-semibold text-base hover:bg-black hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 w-full"
               >
                 <a href={card.link}>둘러보기</a>
-              </Button>
+              </Button> */}
             </div>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <div className="bg-white rounded-lg shadow-sm p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               맞춤형 솔루션이 필요하신가요?
@@ -96,7 +96,7 @@ export function SolutionsSection() {
               <a href="/support/inquiry">상담 문의하기</a>
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

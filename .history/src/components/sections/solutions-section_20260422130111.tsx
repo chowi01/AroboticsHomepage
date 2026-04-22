@@ -28,11 +28,7 @@ export function SolutionsSection() {
       <div className="container-classic">
         {/* Section Header - Classic Style */}
         <div className="section-header-classic">
-          {/* <h2 className="section-title-classic">스마트 AMR 솔루션</h2> */}
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            스마트 AMR 솔루션
-          </h2>
-
+          <h1 className="section-title-classic">스마트 AMR 솔루션</h1>
           <p className="section-subtitle-classic">
             에이로보틱스의 첨단 기술과 검증된 경험을 바탕으로 <br />
             고객에게 최적화된 AMR 솔루션을 제공합니다.
