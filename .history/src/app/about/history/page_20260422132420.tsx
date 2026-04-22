@@ -17,8 +17,11 @@ export default function HistoryPage() {
       <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 mt-16 py-16">
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="relative z-10 flex items-center h-full">
-          <div className="container-classic">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <div className="container-classic text-center">
+            {/* <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              회사 연혁
+            </h1> */}
+            <h1 className="text-2xl md:text-4xl font-bold text-white mb-4">
               회사 연혁
             </h1>
             <p className="text-xl text-gray-200">
@@ -93,8 +96,9 @@ export default function HistoryPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   에이로보틱스는 설립 이후 짧은 기간 동안 AMR 분야의 선도
-                  기업으로 성장했습니다. 앞으로도 지속적인 연구개발과 혁신을
-                  통해 고객에게 최고의 가치를 제공하겠습니다.
+                  기업으로 성장했습니다. <br />
+                  앞으로도 지속적인 연구개발과 혁신을 통해 고객에게 최고의
+                  가치를 제공하겠습니다.
                 </p>
               </div>
             </div>

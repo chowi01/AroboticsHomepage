@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function GreetingPage() {
   return (
@@ -8,9 +8,12 @@ export default function GreetingPage() {
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="relative z-10">
           <div className="container-classic text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">
               대표이사 인사말
             </h1>
+            {/* <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              대표이사 인사말
+            </h1> */}
             <p className="text-xl text-gray-200">
               에이로보틱스와 함께 미래를 만들어갑니다
             </p>
@@ -32,7 +35,7 @@ export default function GreetingPage() {
               />
             </div> */}
             <div className="text-center">
-              <p className="text-xl font-bold text-gray-900 mb-2">
+              <p className="text-6xl font-bold text-gray-900 mb-2">
                 주식회사 에이로보틱스
               </p>
               {/* <p className="text-lg text-gray-800">
@@ -50,14 +53,14 @@ export default function GreetingPage() {
               <p className="text-gray-700 leading-relaxed mb-6">
                 안녕하십니까,
                 <br />
-                A-ROBOTICS를 방문해 주셔서 감사합니다.
+                에이로보틱스를 방문해 주셔서 감사합니다.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 에이로보틱스는 급변하는 시장의 요구에 대응하기 위한 차별화된
-                솔루션 커스터마이징을 제공하는 전문 생산 기업입니다. AMR은
+                솔루션 및 커스터마이징을 제공하는 전문 생산 기업입니다. AMR은
                 운반하고자 하는 제품등의 목적물을 지정된 장소에서 목적지까지
-                자동으로 운반하는 운반 로봇입니다.
+                자동으로 운반하는 물류 로봇입니다.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -68,8 +71,8 @@ export default function GreetingPage() {
 
               <p className="text-gray-700 leading-relaxed mb-6">
                 끊임없는 연구개발과 혁신을 통해 고객 여러분께 최고의 가치를
-                제공하는 기업이 되겠습니다. 앞으로도 많은 관심과 성원을
-                부탁드립니다.
+                제공하는 기업이 되겠습니다. <br />
+                앞으로도 많은 관심과 성원을 부탁드립니다.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-12">감사합니다.</p>

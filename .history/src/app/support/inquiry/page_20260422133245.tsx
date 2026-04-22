@@ -16,13 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import { Select, SelectContent, SelectItem } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -31,7 +25,7 @@ const formSchema = z.object({
   company: z.string().min(2, "회사명을 입력해주세요"),
   email: z.string().email("올바른 이메일 주소를 입력해주세요"),
   phone: z.string().min(10, "올바른 전화번호를 입력해주세요"),
-  inquiryType: z.string().min(1, "문의 유형을 선택해주세요"),
+  // inquiryType: z.string().min(1, "문의 유형을 선택해주세요"),
   message: z.string().min(10, "문의 내용을 입력해주세요"),
 });
 
@@ -45,7 +39,7 @@ export default function InquiryPage() {
       company: "",
       email: "",
       phone: "",
-      inquiryType: "",
+      // inquiryType: "",
       message: "",
     },
   });
@@ -85,9 +79,9 @@ export default function InquiryPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 mt-16 py-16">
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="relative z-10 flex items-center h-full">
-          <div className="container-classic">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="relative z-10">
+          <div className="container-classic text-center">
+            <h1 className="text-3xl md:text-3xl font-bold text-white mb-4">
               제품 문의
             </h1>
             <p className="text-xl text-gray-200">
@@ -182,7 +176,7 @@ export default function InquiryPage() {
                       />
                     </div>
 
-                    <FormField
+                    {/* <FormField
                       control={form.control}
                       name="inquiryType"
                       render={({ field }) => (
@@ -211,7 +205,7 @@ export default function InquiryPage() {
                           <FormMessage />
                         </FormItem>
                       )}
-                    />
+                    /> */}
 
                     <FormField
                       control={form.control}
@@ -287,7 +281,7 @@ export default function InquiryPage() {
                       <p className="text-gray-600 text-sm">
                         (21072) 인천광역시 계양구
                         <br />
-                        서운단로2길 5
+                        서운산단로2길 5
                       </p>
                     </div>
                   </div>
@@ -309,7 +303,7 @@ export default function InquiryPage() {
                     <div>
                       <p className="font-medium text-gray-900 mb-1">이메일</p>
                       <p className="text-gray-600 text-sm">
-                        ahn@a-robotics.co.kr
+                        info@a-robotics.co.kr
                       </p>
                     </div>
                   </div>

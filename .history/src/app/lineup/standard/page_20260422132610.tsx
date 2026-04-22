@@ -7,8 +7,7 @@ export default function StandardLineupPage() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10">
           <div className="container-classic text-center">
-            <h1 className="text-3xl font-bold text-gray-200 mb-4">
-              {/* <h1 className="text-4xl md:text-5xl font-bold text-white mb-4"> */}
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               포크형 AMR 라인업
             </h1>
             <p className="text-xl text-gray-200">
@@ -20,7 +19,8 @@ export default function StandardLineupPage() {
 
       <section className="section-padding bg-white">
         <div className="container-classic">
-          <div className="relative w-full h-auto">
+          <div className="text-2xl font-bold text-gray-900 mb-4">
+            {/* <div className="relative w-full h-auto"> */}
             <ImageMagnifier
               src="/images/lineup/lineup_1.png"
               alt="포크형 AMR 라인업"

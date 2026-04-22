@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function GreetingPage() {
   return (
@@ -8,9 +8,12 @@ export default function GreetingPage() {
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="relative z-10">
           <div className="container-classic text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl font-bold text-gray-200 mb-4">
               대표이사 인사말
             </h1>
+            {/* <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              대표이사 인사말
+            </h1> */}
             <p className="text-xl text-gray-200">
               에이로보틱스와 함께 미래를 만들어갑니다
             </p>

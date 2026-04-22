@@ -59,7 +59,7 @@ export default function CertificationsPage() {
             {/* <h1 className="mb-4 text-3xl font-bold text-white md:text-5xl">
               인증 및 특허
             </h1> */}
-            <h1 className="mb-4 text-3xl font-bold text-gray-200 mb-4 text-center">
+            <h1 className="mb-4 text-3xl font-bold text-gray-200 mb-4">
               인증 및 특허
             </h1>
             <p className="text-xl text-gray-200 text-center">

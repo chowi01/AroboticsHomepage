@@ -77,7 +77,7 @@ export default function DevelopmentRecordsPage() {
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="relative z-10">
           <div className="container-classic text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl md:text-3xl font-bold text-white mb-4">
               개발 및 납품 실적
             </h1>
             <p className="text-xl text-gray-200">

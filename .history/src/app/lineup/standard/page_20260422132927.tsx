@@ -7,7 +7,7 @@ export default function StandardLineupPage() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10">
           <div className="container-classic text-center">
-            <h1 className="text-3xl font-bold text-gray-200 mb-4">
+            <h1 className="text-2xl font-bold text-gray-200 mb-4">
               {/* <h1 className="text-4xl md:text-5xl font-bold text-white mb-4"> */}
               포크형 AMR 라인업
             </h1>

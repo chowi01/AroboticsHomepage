@@ -750,7 +750,7 @@ export default function AMRAgvPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">품질보증 및 기술지원</h2>
+            <h2 className="text-4xl font-bold mb-4">품질보증 및 기술지원</h2>
             <p className="text-xl text-gray-600">
               도입부터 운영까지 전 과정을 책임지는 토탈 서비스
             </p>

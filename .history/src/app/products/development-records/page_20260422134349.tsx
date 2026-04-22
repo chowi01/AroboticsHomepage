@@ -61,6 +61,12 @@ const deliveryData = [
     status: "납품 완료",
     description: "AMR 무인 지게차",
   },
+  {
+    company: "나노",
+    contract: "직접 계약",
+    status: "납품 완료",
+    description: "AMR 무인 지게차",
+  },
 ];
 
 export default function DevelopmentRecordsPage() {
@@ -69,9 +75,9 @@ export default function DevelopmentRecordsPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 mt-16 py-16">
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="relative z-10 flex items-center h-full">
-          <div className="container-classic">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="relative z-10">
+          <div className="container-classic text-center">
+            <h1 className="text-3xl md:text-3xl font-bold text-white mb-4">
               개발 및 납품 실적
             </h1>
             <p className="text-xl text-gray-200">
@@ -176,7 +182,7 @@ export default function DevelopmentRecordsPage() {
                 지속적인 혁신과 성장
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                에이로보틱스는 11가지 핵심 기술 개발과 8개 주요 기업에 대한
+                에이로보틱스는 11가지 핵심 기술 개발과 7개 주요 기업에 대한
                 성공적인 납품을 통해 AMR 분야의 선도 기업으로 성장하고 있습니다.
                 앞으로도 지속적인 연구개발과 고객 맞춤형 솔루션 제공을 통해 더
                 나은 미래를 만들어가겠습니다.
@@ -189,7 +195,7 @@ export default function DevelopmentRecordsPage() {
                   <div className="text-gray-600">개발 기술</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-700 mb-2">8</div>
+                  <div className="text-3xl font-bold text-gray-700 mb-2">7</div>
                   <div className="text-gray-600">납품 기업</div>
                 </div>
                 <div className="text-center">
