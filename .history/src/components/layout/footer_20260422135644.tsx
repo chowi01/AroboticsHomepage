@@ -17,7 +17,7 @@ export function Footer() {
               상호 : (주)에이로보틱스 / 사업자번호 : 135-88-02281 / 대표 :
               권재인
             </div>
-            <div>사업장 주소 : (21072) 인천 계양구 서운단로2길 5</div>
+            <div>사업장 주소 : (21072) 인천 계양구 서운산단로2길 5</div>
             <div>
               전화 032-584-9592 / 팩스 032-555-9592 / 이메일
               info@a-robotics.co.kr
@@ -39,7 +39,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
               >
-                <Youtube className="h-5 w-5" />
+                <Youtube className="h-10 w-10" />
               </a>
               <a
                 href="https://www.facebook.com/people/%EC%95%88%EC%9D%B8%EC%84%B1/pfbid031VsiPZvJQDg4NVK1sxHwGaRKPNcNp3oeuQ3J5FxxdFamiW7aotsn4NigNXhJGn5Al/"
@@ -47,7 +47,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-10 w-10" />
               </a>
               {/* <a
                 href="https://instagram.com/arobotics"

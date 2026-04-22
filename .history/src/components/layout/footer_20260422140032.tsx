@@ -37,8 +37,7 @@ export function Footer() {
                 href="https://www.youtube.com/channel/UCYlS-v05SBLGwEABNlOfaqQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                // className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
-                className="flex items-center justify-center w-15 h-15 rounded-full bg-gray-700 text-white hover:bg-red-600 transition-all duration-200"
+                className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
               >
                 <Youtube className="h-12 w-12" />
               </a>
@@ -46,8 +45,7 @@ export function Footer() {
                 href="https://www.facebook.com/people/%EC%95%88%EC%9D%B8%EC%84%B1/pfbid031VsiPZvJQDg4NVK1sxHwGaRKPNcNp3oeuQ3J5FxxdFamiW7aotsn4NigNXhJGn5Al/"
                 target="_blank"
                 rel="noopener noreferrer"
-                // className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
-                className="flex items-center justify-center w-15 h-15 rounded-full bg-gray-700 text-white hover:bg-red-600 transition-all duration-200"
+                className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
               >
                 <Facebook className="h-12 w-12" />
               </a>

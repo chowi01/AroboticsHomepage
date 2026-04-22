@@ -14,23 +14,21 @@ export function Footer() {
           </div>
           <div className="space-y-1 text-sm text-gray-400 mb-3">
             <div>
-              상호 : (주)에이로보틱스 / 사업자번호 : 135-88-02281
-              [사업자정보확인] / 대표 : 권재인
+              상호 : (주)에이로보틱스 / 사업자번호 : 135-88-02281 / 대표 :
+              권재인
             </div>
-            <div>
-              통신판매번호 : 2025-인천 계양구-0501 / 사업장 주소 : (21072) 인천
-              계양구 서운단로2길 5
-            </div>
+            <div>사업장 주소 : (21072) 인천 계양구 서운산단로2길 5</div>
             <div>
               전화 032-584-9592 / 팩스 032-555-9592 / 이메일
-              ahn@a-robotics.co.kr
+              info@a-robotics.co.kr
             </div>
           </div>
 
           {/* Copyright and Social Icons */}
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              Copyright (C) 2025 A-ROBOTICS CO., LTD.. All Rights Reserved.
+              Copyright (C) 2021 ~ 2026 A-ROBOTICS CO., LTD.. All Rights
+              Reserved.
             </div>
 
             {/* Social Network Icons */}
@@ -39,17 +37,19 @@ export function Footer() {
                 href="https://www.youtube.com/channel/UCYlS-v05SBLGwEABNlOfaqQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                // className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                className="flex items-center justify-center w-15 h-15 rounded-full bg-gray-700 text-white hover:bg-red-600 transition-all duration-200"
               >
-                <Youtube className="h-5 w-5" />
+                <Youtube className="h-12 w-12" />
               </a>
               <a
                 href="https://www.facebook.com/people/%EC%95%88%EC%9D%B8%EC%84%B1/pfbid031VsiPZvJQDg4NVK1sxHwGaRKPNcNp3oeuQ3J5FxxdFamiW7aotsn4NigNXhJGn5Al/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                // className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                className="flex items-center justify-center w-15 h-15 rounded-full bg-gray-700 text-white hover:bg-red-600 transition-all duration-200"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-12 w-12" />
               </a>
               {/* <a
                 href="https://instagram.com/arobotics"
