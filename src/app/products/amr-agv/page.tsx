@@ -598,7 +598,7 @@ export default function AMRAgvPage() {
                 <div>
                   <Badge
                     variant="outline"
-                    className="border-red-600 bg-red-600 text-white"
+                    className="border-blue-600 bg-blue-600 text-white"
                   >
                     감속 3m
                   </Badge>
@@ -614,7 +614,7 @@ export default function AMRAgvPage() {
                 <div>
                   <Badge
                     variant="outline"
-                    className="border-blue-600 bg-blue-600 text-white"
+                    className="border-red-600 bg-red-600 text-white"
                   >
                     정지 0.2m
                   </Badge>

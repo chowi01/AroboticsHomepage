@@ -12,7 +12,7 @@ const slides = [
     description:
       "첨단 기술로 구현된 완전 자율주행 시스템으로 안전하고 효율적인 물류 자동화를 실현합니다.",
     buttonText: "자세히 보기",
-    backgroundVideo: "/videos/forklift/fork_type/video_1.mp4",
+    backgroundVideo: "/videos/forklift/fork_type/video_1_2x.mp4",
     buttonLink: "/products/amr-agv",
   },
   // {
@@ -42,7 +42,7 @@ const slides = [
     description:
       "고객의 다양한 요구사항에 맞춰 최적화된 AMR 제품군을 제공합니다.",
     buttonText: "제품 라인업",
-    backgroundVideo: "/videos/forklift/fork_type/video_2.mp4",
+    backgroundVideo: "/videos/forklift/fork_type/video_2_2x.mp4",
     buttonLink: "/lineup/standard",
   },
   {
@@ -52,7 +52,7 @@ const slides = [
     description:
       "다양한 산업 분야에서 검증된 성능과 신뢰성을 바탕으로 고객 만족을 실현하고 있습니다.",
     buttonText: "적용 사례",
-    backgroundVideo: "/videos/forklift/fork_type/video_3.mp4",
+    backgroundVideo: "/videos/forklift/fork_type/video_3_2x.mp4",
     buttonLink: "/products/case-studies",
   },
   {
@@ -62,7 +62,7 @@ const slides = [
     description:
       "8건의 특허를 보유하고 있으며, 지속적인 R&D를 통해 미래 기술을 선도합니다.",
     buttonText: "기술 혁신",
-    backgroundVideo: "/videos/forklift/fork_type/video_4.mp4",
+    backgroundVideo: "/videos/forklift/fork_type/video_4_2x.mp4",
     buttonLink: "/about/patents",
   },
 ];
