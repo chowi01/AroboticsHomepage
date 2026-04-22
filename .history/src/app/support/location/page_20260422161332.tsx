@@ -1,7 +1,6 @@
 import { Car, Mail, MapPin, Phone, Train } from "lucide-react";
-import Image from "next/image";
-
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import KakaoMap from "@/components/ui/KakaoMap";
 
 export default function LocationPage() {
   return (
@@ -9,9 +8,9 @@ export default function LocationPage() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 mt-16 py-16">
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="relative z-10 flex items-center h-full">
-          <div className="container-classic">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <div className="relative z-10">
+          <div className="container-classic text-center">
+            <h1 className="text-3xl md:text-3xl font-bold text-white mb-4">
               오시는 길
             </h1>
             <p className="text-xl text-gray-200">
@@ -28,11 +27,10 @@ export default function LocationPage() {
             {/* Map Area */}
             <div className="lg:col-span-2">
               <div className="bg-gray-200 rounded-lg h-[480px] relative overflow-hidden shadow-lg">
-                <Image
-                  src="/images/map/map.avif"
-                  alt="에이로보틱스 위치 지도"
-                  fill
-                  className="object-cover"
+                <KakaoMap
+                  address="인천광역시 계양구 서운산단로 2길 5"
+                  companyName="에이로보틱스"
+                  className="w-full h-full"
                 />
               </div>
 
@@ -87,7 +85,7 @@ export default function LocationPage() {
                         <p className="text-gray-600 text-sm">
                           (21072) 인천광역시 계양구
                           <br />
-                          서운단로2길 5
+                          서운산단로2길 5
                         </p>
                       </div>
                     </div>
@@ -113,7 +111,7 @@ export default function LocationPage() {
                       <div>
                         <p className="font-medium text-gray-900 mb-1">이메일</p>
                         <p className="text-gray-600 text-sm">
-                          info@a-robotics.co.kr
+                          ahn@a-robotics.co.kr
                         </p>
                       </div>
                     </div>

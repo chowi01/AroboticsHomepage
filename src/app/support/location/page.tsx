@@ -111,7 +111,7 @@ export default function LocationPage() {
                       <div>
                         <p className="font-medium text-gray-900 mb-1">이메일</p>
                         <p className="text-gray-600 text-sm">
-                          info@a-robotics.co.kr
+                          ahn@a-robotics.co.kr
                         </p>
                       </div>
                     </div>
