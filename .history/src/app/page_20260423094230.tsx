@@ -13,7 +13,7 @@ export default function HomePage() {
         <HeroSection />
         <SolutionsSection />
         {/* <ProductsSection /> */}
-        {/* <CardsSection /> */}
+        <CardsSection />
         {/* <SpecialProductSection /> */}
         <VideoGallerySection />
 
