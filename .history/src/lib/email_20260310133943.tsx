@@ -33,8 +33,7 @@ export function EmailTemplate({
 
       <hr />
       <h3>문의내용</h3>
-      {/* <p>{message.replace(/\n/g, "<br />")}</p> */}
-      <p style={{ whiteSpace: "pre-line" }}>{message}</p>
+      <p>{message.replace(/\n/g, "<br />")}</p>
     </div>
   );
 }

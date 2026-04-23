@@ -39,8 +39,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "고객문의 <no-reply@a-robotics.co.kr>",
-      // to: ["info@a-robotics.co.kr", "w.i.cho@a-robotics.co.kr"],
-      to: ["info@a-robotics.co.kr"],
+      to: ["info@a-robotics.co.kr", "w.i.cho@a-robotics.co.kr"],
       replyTo: email,
       subject: `[홈페이지 문의] ${company ? company + " - " : ""}${name}`,
       react: EmailTemplate({ name, email, phone, company, message }),
